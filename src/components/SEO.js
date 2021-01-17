@@ -7,7 +7,7 @@ const SEO = () => {
 
   return (
     <Helmet>
-      <html lang="en" />
+      <html lang="es" />
       <meta charSet="utf-8" />
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
