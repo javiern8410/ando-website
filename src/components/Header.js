@@ -1,19 +1,22 @@
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "gatsby"
+import logo from "../images/logo.png";
+
 
 const Header = () => {
     return (
-        <header className="m-0 bg-gray-800 text-white font-semibold flex items-center justify-center h-16 w-full">
-            <h1 className="">
-                <Link to="/" className="mr-2">
-                    Ando Solutions
-                </Link>
-            </h1>
-            <h1>
-                <Link to="/about" className="mr-2">
-                    About
-                </Link>
-            </h1>
+        <header className="container mx-auto m-0 text-white font-semibold flex items-center justify-between h-16 w-full">
+            <Link to="/" className="mr-2">
+                <img
+                    src={logo}
+                    className="h-12 my-auto"
+                    alt="Ando Logo"
+                    title="Ando Software Solutions"
+                />
+            </Link>
+            <a href="tel:59896800461" class="header-phone"><FontAwesomeIcon icon={faWhatsapp} size="1x" /> + (598) 96 800 461</a>
         </header>
     )
 }
